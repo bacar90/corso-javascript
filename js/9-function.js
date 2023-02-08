@@ -1,11 +1,44 @@
 /*
 ! LEZIONE 9
 & In JavaScript, una funzione è un blocco di codice che esegue un compito specifico e può essere riutilizzato in tutto il codice. Le funzioni sono definite usando la parola chiave "function()", seguita dal nome della funzione, un elenco di parametri tra parentesi e il blocco di codice tra parentesi graffe. Le funzioni possono accettare input (parametri) e restituire output (valori di ritorno).
-^ come invocare una funtion()
+^ come dichiarare e invocare una funtion()
 function ciao(){
+    
     console.log("ciao");
 }
-ciao();    //ciao
+ciao();
+
+
+
+^ function() par expression
+? non dimenticare di mettere il punto virgola dopo i parentesi graffe ;
+const persona = function () {
+    console.log("la persona si chiama paola");
+};
+persona();
+
+
+
+^ return function()
+function calcoloRettangolo () {
+    let lunghezza = 15;
+    let larghezza = 10;
+    return lunghezza * larghezza;
+}
+let risultato = calcoloRettangolo();
+console.log(`il risultato del mio calcolo ${risultato}`);    //150
+
+
+
+function calcolo(lu,la) {
+    let risultato = lu * la;
+    return risultato;
+}
+console.log(calcolo(10,5));
+console.log(calcolo(20,5));
+console.log(calcolo(30,5));    //150
+console.log(calcolo(40,5));
+console.log(calcolo(50,5));
 
 
 
@@ -32,14 +65,10 @@ ciao();
 
 ^ parametri delle function()
 & In JavaScript, i parametri delle funzioni sono valori che vengono passati alla funzione quando viene chiamata. Questi valori vengono usati dalla funzione per eseguire il suo compito. Ad esempio:
-function greet(name) {
-    console.log("Hello, " + name + "!");
+function Persona(nome,cognome) {
+    console.log("ciao",nome,cognome);   //ciao mario rossi
 }
-
-greet("John");
-
-? In questo esempio, greet è una funzione che accetta un parametro chiamato name. Quando la funzione viene chiamata con greet("John"), il valore "John" viene assegnato al parametro name, che viene quindi utilizzato all'interno della funzione per stampare un messaggio di benvenuto.
-
+Persona("mario", "rossi");
 
 
 ^ 

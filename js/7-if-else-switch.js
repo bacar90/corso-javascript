@@ -12,16 +12,20 @@ if(nome == "luca"){
 
 ^ else if
 ? ogni else if ci permette di avere una condizione
-let nome = "patrizia";
+let age = 90;
 
-if(nome == "abou"){
-    console.log("ciao abou");
-}else if(nome == "marco"){
-    console.log("ciao marco");
-}else if(nome == "bruna"){
-    console.log("ciao bruna");
-}else{
-    console.log("persona anonyma");                 persona anonyma
+if (age <= 2) {
+    console.log("bebe");
+} else if(age <= 15){
+    console.log("adolescent");
+} else if(age <= 25){
+    console.log("jeune");
+} else if(age <= 50){
+    console.log("homme");
+} else if(age <= 90){
+    console.log("viellard");    //viellard
+} else{
+    console.log("je ne connait pas l'age");
 }
 
 
@@ -81,19 +85,46 @@ if(!(nome == "luca")){
 ^ switch statement
 ? Il costrutto switch in JavaScript è utilizzato per eseguire uno dei tanti blocchi di codice a seconda del valore di una determinata espressione.
 ? il (break) serve per fermare la condizione se l'ha trovato, La sintassi generale è la seguente:
-let nome = "leonardo";
+let calendario = 6;
 
-switch(nome){
-    case "luca":
-    console.log("ciao luca");
+switch (calendario) {
+    case 1: 
+    console.log("jennaio");
     break;
-    case "marco":
-    console.log("ciao marco");
+    case 2: 
+    console.log("febbraio");
     break;
-    case "gino":
-    console.log("ciao gino");
+    case 3: 
+    console.log("marzo");
+    break;
+    case 4: 
+    console.log("aprile");
+    break;
+    case 5: 
+    console.log("maggio");
+    break;
+    case 6: 
+    console.log("giugno");     //giugno
+    break;
+    case 7: 
+    console.log("luglio");
+    break;
+    case 8: 
+    console.log("agosto");
+    break;
+    case 9: 
+    console.log("settembre");
+    break;
+    case 10: 
+    console.log("ottobre");
+    break;
+    case 11: 
+    console.log("novembre");
+    break;
+    case 12: 
+    console.log("dicembre");
     default:
-    console.log("non so il nome");           non so il nome
+        console.log("non trovato");
 }
 
 
