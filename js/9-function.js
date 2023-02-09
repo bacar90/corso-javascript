@@ -11,15 +11,15 @@ ciao();
 
 
 ^ function() par expression
-? non dimenticare di mettere il punto virgola dopo i parentesi graffe ;
 const persona = function () {
     console.log("la persona si chiama paola");
-};
+}
 persona();
 
 
 
 ^ return function()
+? esempio
 function calcoloRettangolo () {
     let lunghezza = 15;
     let larghezza = 10;
@@ -29,7 +29,7 @@ let risultato = calcoloRettangolo();
 console.log(`il risultato del mio calcolo ${risultato}`);    //150
 
 
-
+? esempio
 function calcolo(lu,la) {
     let risultato = lu * la;
     return risultato;
@@ -40,6 +40,20 @@ console.log(calcolo(30,5));    //150
 console.log(calcolo(40,5));
 console.log(calcolo(50,5));
 
+
+? esempio
+let x = calcolo(10, 5);
+function calcolo(a, b) {
+    return a * b;
+}
+console.log(x);     //50
+
+
+? esempio
+function tocel(f) {
+    return (5/9) * (f-32);
+}
+console.log(tocel(77));    //25
 
 
 ^ function() anonime

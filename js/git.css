@@ -1,0 +1,161 @@
+/*
+& per clonare un progetto su github
+^ git clone (url del progetto)
+
+& per effettuare il download di file e branch da un altro repository
+^ git fetch origin (il nome del branch su github)
+^ git checkout (il nome del branch appena)
+
+& per andare a recuperare i cambiamenti dei branch su github
+^ git pull origin (il nome del branch su github)
+
+& per andare a recuperare un commit
+^ git cherry-pick ( il codice del commit)
+
+& per creare un repositori locale
+^ git init
+
+
+& per configurare git e asocciarlo a un progetto
+^ git config --global user.name ("nome congnome")
+^ git config --global user.email ("email")
+^ git config --global color.ui auto
+
+& per avere lo stato attuale della nostra cartella
+^ git status
+
+
+& per aggiungere il nostro file unico o tutti i file
+^ git add (il nome del file)
+^ git add . (per tutti i file)
+
+
+& per salvare i file locale
+^ git commit -m (la descrizione del file)
+
+& per modificare il messaggio di commit
+^ git commit --amend -m (la descrizione del file)
+
+& per elencare le differenze tra il workspace e l'indice.
+^ git diff
+
+& per pushare i nostri file su github
+^ git remote add origin https://github.com/bacar90/corso-GIT.git
+^ git branch -M main
+^ git push -u origin main
+
+& per creare un nuovo repository sulla riga dei commandi
+^ echo "# commandi-git" >> README.md
+^ git init
+^ git add README.md
+^ git commit -m "first commit"
+^ git branch -M main
+^ git remote add origin https://github.com/bacar90/commandi-git.git
+^ git push -u origin main
+
+& per pushare le modifiche dal file locale verso un branch esistente su github
+^ git push origin (il nome del branch)
+
+
+& per pushare il nuovo branch verso github
+^ git push origin (il nome del branch)
+
+& per eliminare un branch remoto.
+^ git push origin --delete (il nome del branch)
+
+& per rinominare un branch
+^ git branch -m (il nuovo nome del branch)
+
+
+& per creare un branch nuovo
+^ git branch (il nome del branch)
+
+& per vedere tutti i branch esistente
+^ git branch
+
+& per elencare i branch presenti su github
+^ git branch -r
+
+& per elencare i branch presenti su github e sul locale
+^ git branch -a
+
+& per eliminare il branch specificato
+^ git branch -D (il nome del branch)
+
+& per spostarci verso il branch
+^ git checkout (il nome del branch)
+
+
+& per creare e spostarci direttamente verso il nuovo branch
+^ git checkout -b (il nuovo del branch)
+
+
+& per spostarci da un branch a l'altro
+^ git checkout (il nome del branch)
+
+
+& per tornare al branch precedente
+^ git checkout -
+
+& per unire i cambiamenti di branch posizionarsi sul branch main
+^ git merge commit (il nome del branch)
+
+& per elencare gli ultimi commit, i più recenti in cima
+^ git log
+
+& per mantenere i tuoi file e ripristinare automaticamente tutte le modifiche
+^ git reset --soft
+
+& per mantenere tutti i file uguali ma annulla le modifiche. Questa è l'opzione più flessibile, ma nonostante il nome non modifica i file
+^ git reset --mixed
+
+& per annullare l'ultimo commit, mantenendo i cambiamenti nell'indice.
+^ git reset --soft HEAD^
+
+& per rimuovere e distruggere qualsiasi modifica dalla directory locale . Usalo solo se sai cosa stai facendo.
+^ git reset --hard
+
+& Pulisce il workspace eliminando ricorsivamente i file che non sono tracciati da git
+^ git clean
+
+& per vedere cosa verrà eliminato
+^ git clean -n
+
+& per eliminare i file dal workspace
+^ git clean -f
+
+& per rimuovere uno o più file dal workspace e dall'indice.
+^ git rm (il nome del file)
+
+& per spostare uno o più file nel workspace e nell'indice.
+^ git mv (il nome del file)
+
+& per mettere da parte delle modifiche
+^ git stash
+
+& per riprendere le modifiche
+^ git stash pop
+
+& per vedere la lista di tutti i stach
+^ git stash list
+
+& per pulire la lista di tutti i stash
+^ git stash clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
